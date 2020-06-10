@@ -1,0 +1,37 @@
+TRUNCATE ro_pats_on_tx;
+LOAD DATA local infile 'D:\\Tableau\\Sources\\ClinicalOps\\RadOnc\\PatsOnTx\\PatsOnTx.csv' 
+INTO table ro_pats_on_tx
+FIELDS TERMINATED BY ','  
+OPTIONALLY ENCLOSED BY '"' 
+IGNORE 3 LINES 
+(@pd,pat_name,cpt,description,units,inPatient,ICD,ICD_Desc,Provider,Machine,sch_id)
+SET proc_date = str_to_date(@pd,'%m/%d/%Y'); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
